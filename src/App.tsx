@@ -5,6 +5,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 import WebApp from '@twa-dev/sdk'
+import { TonConnectButton } from '@tonconnect/ui-react'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -23,6 +24,7 @@ function App() {
         </a>
       </div>
       <h1>TWA + Vite + React</h1>
+            <TonConnectButton />
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
